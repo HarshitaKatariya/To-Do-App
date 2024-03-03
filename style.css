@@ -32,7 +32,7 @@
 }
 @media(max-width:800px){
     .todo{
-        width: 20rem;
+        width: 25rem;
         min-height: 10rem;
     }
 }
