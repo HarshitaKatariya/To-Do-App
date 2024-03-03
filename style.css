@@ -16,11 +16,11 @@
     padding: 10px;  
     display: flex;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
 }
 .todo{
     width: 40rem;
-    min-height: 30rem;
+    min-height: 15rem;
     background-color: white;
     margin: 10rem;
     border-radius: 0.8rem;
@@ -35,6 +35,7 @@
         width: 25rem;
         min-height: 10rem;
     }
+}
 .todo h2{
     font-size: 1.5rem;
     margin-top: 0.5rem;
