@@ -20,7 +20,7 @@
 }
 .todo{
     width: 40rem;
-    height: 30rem;
+    min-height: 30rem;
     background-color: white;
     margin: 10rem;
     border-radius: 0.8rem;
@@ -29,9 +29,12 @@
     /* align-items: center; */
     color: rgb(239, 105, 116);
     position: relative;
-    
-
 }
+@media(max-width:800px){
+    .todo{
+        width: 25rem;
+        min-height: 10rem;
+    }
 .todo h2{
     font-size: 1.5rem;
     margin-top: 0.5rem;
