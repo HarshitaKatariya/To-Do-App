@@ -122,4 +122,7 @@ ul li span:hover{
     max-width: 25rem;
     min-height: 20rem;
    }
+   button{
+       padding-right:2rem;
+   }
 }
