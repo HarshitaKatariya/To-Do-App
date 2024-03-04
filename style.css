@@ -9,18 +9,19 @@
 
 .container{
     width: 100%;
-    min-height: 50rem;
+    min-height: 100vh;
     background: hsla(355, 74%, 62%, 1);
 
     background: linear-gradient(0deg, hsla(355, 74%, 62%, 1) 0%, hsla(0, 0%, 3%, 1) 100%);
-    padding: 10px;  
+    padding: 20px;  
     display: flex;
+    align-items: center;
     justify-content: center;
     /* position: fixed; */
 }
 .todo{
-    width: 40rem;
-    min-height: 15rem;
+    width: 100%;
+    min-height: 40rem;
     background-color: white;
     margin: 10rem;
     border-radius: 0.8rem;
@@ -29,13 +30,9 @@
     /* align-items: center; */
     color: rgb(239, 105, 116);
     position: relative;
+    padding: 20px;
 }
-@media(max-width:800px){
-    .todo{
-        width: 25rem;
-        min-height: 10rem;
-    }
-}
+
 .todo h2{
     font-size: 1.5rem;
     margin-top: 0.5rem;
@@ -52,8 +49,8 @@
     justify-content: space-between;
     background-color: rgb(230, 227, 227);
     border-radius: 1.5rem;
-    padding-left: 1rem;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 input{
     border: none;
@@ -65,7 +62,7 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
     background-color: tomato;
     color: white;
@@ -74,6 +71,9 @@ button{
 }
 button:hover{
     background-color: orangered;
+}
+ul{
+    padding: 0;
 }
 ul li{
     list-style: none;
@@ -95,9 +95,9 @@ ul li::before{
     width: 0.9rem;
     border:1px solid black;
     border-radius: 50%;
-    position:center;
-    margin-left: -1.5rem;
-    margin-top: 0.25rem;
+    left: 0.5rem; /* Adjust left position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
 }
 ul li.check{
     color: #555;
@@ -112,4 +112,14 @@ ul li span{
 }
 ul li span:hover{
     background-color:#edeef0;
+}
+@media(max-width:800px){
+   .container{
+    padding: 10px;
+   }
+   .todo{
+    width: 100%;
+    max-width: 25rem;
+    min-height: 20rem;
+   }
 }
