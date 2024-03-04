@@ -3,13 +3,19 @@ let ul = document.querySelector("ul");
 let inp = document.querySelector("input"); 
 
 btn.addEventListener("click", function(){
-    let item = document.createElement("li");
-    item.innerText = inp.value;
-    ul.appendChild(item);
-    let span = document.createElement("span");
-    span.innerHTML = "\u00d7";
-    item.appendChild(span);
-    inp.value = "";
+    if(inp.value === ""){
+        alert("Enter a value");
+    }
+    else{
+        let item = document.createElement("li");
+        item.innerText = inp.value;
+        ul.appendChild(item);
+    
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        item.appendChild(span);
+        inp.value = "";
+    }
 
 })
 
