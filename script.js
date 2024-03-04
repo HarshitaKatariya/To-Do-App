@@ -26,7 +26,7 @@ btn.addEventListener("click", function(){
 
 ul.addEventListener('click',function(e){
     if(e.target.tagName === 'LI'){
-        e.target.classList.toggle('checked'); // Changed class name to "checked" for better clarity
+        e.target.classList.toggle('check'); // Changed class name to "checked" for better clarity
     }
 });
 
